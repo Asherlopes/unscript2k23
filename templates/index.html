@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Document</title>
+</head>
+<body>
+
+{% include 'navbar.html' %}
+
+  <div class="sidebar">
+      <ul>
+        <li><a href="/check">
+          <span class="icon"><i class="fas fa-book"></i></span>
+          <span class="title">Check Document</span>
+          </a></li>
+        <li><a href="#">
+          <span class="icon"><i class="fas fa-file-video"></i></span>
+          <span class="title">About</span>
+          </a></li>
+        <li><a href="/feedback">
+          <span class="icon"><i class="fas fa-volleyball-ball"></i></span>
+          <span class="title">Feedback</span>
+          </a></li>
+
+    </ul>
+  </div>
+
+</body>
+</html>
